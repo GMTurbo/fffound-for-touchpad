@@ -1,0 +1,209 @@
+.overlay{
+	/*background:rgba(34,59,91,0.95);*/
+	background: rgba(0,0,0,0.85);
+	border-bottom-right-radius:0.5em;
+	border-top-right-radius:0.5em;
+	position: fixed;
+	color:white;
+	width:20px;
+	height:60px;
+	top:240px;
+	left:0px;
+	display:block;
+	font-size:15px;
+	z-index:100;
+}
+#overlayMain{
+	width:20px;
+	height:60px;
+	z-index:10;
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	/*-webkit-animation: loadbar 1s infinite;*/
+}
+td.loading {
+	width:20px;
+	height:55px;
+	padding: 2pt;
+	-webkit-animation-name: loadbar; 
+	-webkit-animation-duration: 1.2s; 
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-timing-function: ease-in-out;
+	background: url(../images/dot.png) center center no-repeat;
+	background-position:top;
+	z-index:10;
+}
+@-webkit-keyframes loadbar{
+	0% { background-position: top;}
+	50% {background-position: bottom; }
+	100% {background-position: top; }
+}
+
+.toolbar{
+	/*background:rgba(34,59,91,0.95);
+	background: rgba(0,0,0,0.90);
+	border-bottom-right-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-top-left-radius:0.5em;
+	border-style:solid;
+	border-color:#ffffff;
+	border-width: 1px;*/
+	position: fixed;
+	opacity:1.0;
+	color:white;
+	height: 222px;
+	witdth: 60px;
+	/*width:222px;
+	height:60px;*/
+	top:2%;
+	left:17%;
+	z-index:100;
+}
+.toolbar.hide{
+	opacity:0;
+	z-index:0;
+}
+#overlayToolBar{
+	width:222px;
+	height:60px;
+	z-index:10;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	/*-webkit-animation: loadbar 1s infinite;*/
+}
+img#saveBut{
+	height: 50px;
+	width: 65px;
+	padding: 2px;
+	background: url(../images/toolba/download32.png) center center no-repeat;
+}
+img#openBut{
+	height: 50px;
+	width: 65px;
+	padding: 2px;
+	background: url(../images/toolba/web.png) center center no-repeat;
+}
+img#emailBut{
+	height: 50px;
+	width: 65px;
+	padding: 2px;
+	background: url(../images/toolba/mail32.png) center center no-repeat;
+}
+.exp{
+	/*background:rgba(34,59,91,0.95);
+	background: rgba(0,0,0,0.90);
+	border-bottom-right-radius:0.5em;
+	border-top-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-top-left-radius:0.5em;
+	border-style:solid;
+	border-color:#ffffff;
+	border-width: 1px;*/
+	position: fixed;
+	opacity:1.0;
+	color:white;
+	width:70px;
+	height:60px;
+	top:2%;
+	left:70%;
+	z-index:100;
+}
+.exp.hide{
+	opacity:0;
+	z-index:0;
+}
+#overlayExpand{
+	width:70px;
+	height:60px;
+	z-index:10;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	/*-webkit-animation: loadbar 1s infinite;*/
+}
+img#expandBut{
+	height: 50px;
+	width: 65px;
+	padding: 2px;
+	background: url(../images/expand.png) center center no-repeat;
+}
+img#searchBut{
+	height: 50px;
+	width: 65px;
+	padding: 2px;
+	background: url(../images/toolba/search32.png) center center no-repeat;
+}
+
+div#userName{
+	position:fixed;
+	top:69%;
+	left:17%;
+}
+
+div#listType{
+	position:fixed;
+	top:0px;
+	left:91%;
+}
+/*
+<div id="userName">
+		<h3 class="header" id="commentsheader"><i>#{commentcount}</i></h3>
+</div>
+<div id="listType">
+	<h3 class="header" id="commentsheader"><i>#{commentcount}</i></h3>
+</div>
+*/
+/*<div id="overlayExpand" class="toolbar hide">
+		<table id="tBar">
+			<tr>
+				<td id="expand"><img id="expandBut" src="../images/blank.png"></td>
+			</tr>
+		</table>
+	</div>*/
+/*
+<div id="overlayToolBar" class="toolbar">
+		<table id="tBar">
+			<tr>
+				<td><img id="saveBut" src="url(../images/toolba/download32.png)"></td>
+				<td><img id="openBut" src="url(../images/toolba/home32.png)"></td>
+				<td><img id="emailBut" src="url(../images/toolba/mail32.png)"></td>
+			</tr>
+		</table>
+	</div>
+*/
+
+/*@-webkit-keyframes skrink {
+			0%   { -webkit-transform:scale(1.0,1.0); }
+			100% { -webkit-transform:scale(0.0,0.0); }
+		}
+		
+@-webkit-keyframes moveup {
+			0%   { -webkit-transform: translateY(0); }
+			100% { -webkit-transform: translateY(2000); }
+		}
+		
+@-webkit-keyframes movein {
+			0%   { -webkit-transform: translateY(2000); }
+			100% { -webkit-transform: translateY(0); }
+		}
+		
+@-webkit-keyframes fadeout {
+			0%   { opacity:1.0; }
+			100% { opacity:0; }
+		}
+@-webkit-keyframes fadein {
+			0%   { opacity:0; }
+			100% { opacity:1.0; }
+		}
+@-webkit-keyframes fadeout2 {
+			0%   { opacity:0.15; }
+			100% { opacity:0; }
+		}
+@-webkit-keyframes fadein2 {
+			0%   { opacity:0; }
+			100% { opacity:0.15; }
+		}
+*/
