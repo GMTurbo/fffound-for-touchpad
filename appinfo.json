@@ -1,10 +1,10 @@
 {
 	"id": "com.gmturbo.fffound",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"vendor": "GMTurbo",
 	"type": "web",
 	"main": "index.html",
-	"title": "ffffound",
+	"title": "Ffffound! HD",
 	"icon": "icon2.png",
 	"keywords": ["images","ffffound","gmturbo"],
 	"uiRevision": "2"

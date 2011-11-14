@@ -1,33 +1,27 @@
 opus.Gizmo({
 	name: "fullView",
+	layoutKind: "absolute",
 	dropTarget: true,
 	type: "Palm.Mojo.Panel",
+	t: "0",
 	h: "100%",
 	styles: {
 		zIndex: 2,
 		bgImage: "",
-		textAlign: "center"
+		textAlign: "center",
+		bgColor: ""
 	},
 	chrome: [
 		{
-			name: "panel6",
-			layoutKind: "hbox",
-			dropTarget: true,
-			type: "Palm.Mojo.Panel",
+			name: "imageView1",
+			onImageViewChanged: "imageView1ImageViewChanged",
+			wrap: false,
+			type: "Palm.Mojo.ImageView",
 			l: 0,
 			t: 0,
-			h: "100%",
-			controls: [
-				{
-					name: "imageView1",
-					type: "Palm.Mojo.ImageView",
-					l: 511,
-					t: 0,
-					styles: {
-						bgColor: "black"
-					}
-				}
-			]
+			styles: {
+				bgColor: ""
+			}
 		}
 	]
 });

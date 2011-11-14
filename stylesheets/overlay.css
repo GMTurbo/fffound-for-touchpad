@@ -15,7 +15,7 @@
 }
 #overlayMain{
 	width:20px;
-	height:60px;
+	height:80px;
 	z-index:10;
 	-webkit-transition-property: top;
 	-webkit-transition-duration: 0.5s;
@@ -24,7 +24,7 @@
 }
 td.loading {
 	width:20px;
-	height:55px;
+	height:75px;
 	padding: 2pt;
 	-webkit-animation-name: loadbar; 
 	-webkit-animation-duration: 1.2s; 
@@ -79,18 +79,30 @@ img#saveBut{
 	width: 65px;
 	padding: 2px;
 	background: url(../images/toolba/download32.png) center center no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	border: solid;
+	border-color: black;
+	border-width:1px;
 }
 img#openBut{
 	height: 50px;
 	width: 65px;
 	padding: 2px;
 	background: url(../images/toolba/web.png) center center no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	border: solid;
+	border-color: black;
+	border-width:1px;
 }
 img#emailBut{
 	height: 50px;
 	width: 65px;
 	padding: 2px;
 	background: url(../images/toolba/mail32.png) center center no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	border: solid;
+	border-color: black;
+	border-width:1px;
 }
 .exp{
 	/*background:rgba(34,59,91,0.95);
@@ -108,7 +120,7 @@ img#emailBut{
 	width:70px;
 	height:60px;
 	top:2%;
-	left:70%;
+	left:68%;
 	z-index:100;
 }
 .exp.hide{
@@ -129,18 +141,26 @@ img#expandBut{
 	width: 65px;
 	padding: 2px;
 	background: url(../images/expand.png) center center no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	border: solid;
+	border-color: black;
+	border-width:1px;
 }
 img#searchBut{
 	height: 50px;
 	width: 65px;
 	padding: 2px;
 	background: url(../images/toolba/search32.png) center center no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	border: solid;
+	border-color: black;
+	border-width:1px;
 }
 
 div#userName{
 	position:fixed;
-	top:69%;
-	left:17%;
+	top:68%;
+	left:15%;
 }
 
 div#listType{
